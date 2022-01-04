@@ -18,8 +18,6 @@ import java.util.Optional;
 @Service
 public class AppointmentService {
     private final AppointmentRepository appointmentRepository;
-    private final String serviceTypeService = "http://localhost:8086";
-    private final String appointmentService = "http://localhost:8085";
 
     public List<Appointment> fetchAll() {
         return appointmentRepository.findAll();
